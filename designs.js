@@ -1,15 +1,16 @@
+// Select color input
+// Select size input
+var cellColor, nRow, selectedCell;
+
+
 function makeGrid() {
-    var cellColor;
-    var nRow;
-    var selectedCell;
     var height = $('#inputHeight').val();
     var width = $('#inputWidth').val();
     var grid = $('#pixelCanvas');
 
-
     grid.children().remove();
 
-//This for loop creates the tables rows
+    //This for loop creates the tables rows
     for (var trowCount = 0; trowCount < height; trowCount++) {
         grid.append('<tr></tr>');
     }
